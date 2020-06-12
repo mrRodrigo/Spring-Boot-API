@@ -1,0 +1,4 @@
+day 1 (add dependencies)
+1. add h2 (database in memomory for tests)
+2. jpa
+3. mysql
