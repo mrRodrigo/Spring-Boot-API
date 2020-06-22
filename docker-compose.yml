@@ -8,4 +8,4 @@ services:
       - ./test-sql-2:/docker-entrypoint-initdb.d
     environment:
       MYSQL_ROOT_PASSWORD: pwd
-      MYSQL_DATABASE: mysql
+      MYSQL_DATABASE: api

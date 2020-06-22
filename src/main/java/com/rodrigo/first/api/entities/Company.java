@@ -16,6 +16,8 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
 
+
+
 @Entity
 @Table(name = "company")
 public class Company {
@@ -26,7 +28,7 @@ public class Company {
 	private String cnpj;
 	private Date createDate;
 	private Date updateDate;
-	private List<Worker> workers;
+	private List<Worker> worker;
 	
 	public Company() {
 	}
@@ -42,11 +44,11 @@ public class Company {
 	}
 
 	@Column(name = "name", nullable = false)
-	public String getRazaoSocial() {
+	public String getName() {
 		return name;
 	}
 
-	public void setRazaoSocial(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
@@ -60,30 +62,30 @@ public class Company {
 	}
 
 	@Column(name = "create_date", nullable = false)
-	public Date getDataCriacao() {
+	public Date getCreateDate() {
 		return createDate;
 	}
 
-	public void setDataCriacao(Date createDate) {
+	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
 	}
 
 	@Column(name = "update_date", nullable = false)
-	public Date getDataAtualizacao() {
+	public Date getUpdateDate() {
 		return updateDate;
 	}
 
-	public void setDataAtualizacao(Date updateDate) {
+	public void setUpdateDate(Date updateDate) {
 		this.updateDate = updateDate;
 	}
 
 	@OneToMany(mappedBy = "company", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	public List<Worker> getFuncionarios() {
-		return workers;
+	public List<Worker> getWorker() {
+		return worker;
 	}
 
-	public void setFuncionarios(List<Worker> workers) {
-		this.workers = workers;
+	public void setWorker(List<Worker> worker) {
+		this.worker = worker;
 	}
 	
 	@PreUpdate

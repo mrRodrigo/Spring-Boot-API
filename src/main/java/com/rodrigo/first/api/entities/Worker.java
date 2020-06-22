@@ -58,7 +58,7 @@ public class Worker {
 	@Column(name = "name", nullable = false)
 	public String getName() { return name; }
 
-	public void setNome(String nome) { this.name = nome; }
+	public void setName(String nome) { this.name = nome; }
 
 	@Column(name = "email", nullable = false)
 	public String getEmail() { return email; }
@@ -82,11 +82,11 @@ public class Worker {
 	}
 	
 	@Transient
-	public Optional<BigDecimal> getValorHoraOpt() {
+	public Optional<BigDecimal> getHourCostOpt() {
 		return Optional.ofNullable(hourCost);
 	}
 
-	public void setValorHora(BigDecimal hourCost) {
+	public void setHourCost(BigDecimal hourCost) {
 		this.hourCost = hourCost;
 	}
 
@@ -124,7 +124,7 @@ public class Worker {
 		return role;
 	}
 
-	public void setPerfil(RoleEnum role) {
+	public void setRole(RoleEnum role) {
 		this.role = role;
 	}
 
@@ -156,16 +156,16 @@ public class Worker {
 	}
 
 	@ManyToOne(fetch = FetchType.EAGER)
-	public Company getEmpresa() {
+	public Company getCompany() {
 		return company;
 	}
 
-	public void setEmpresa(Company company) {
+	public void setCompany(Company company) {
 		this.company = company;
 	}
 
 	@OneToMany(mappedBy = "worker", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	public List<Punch> getLancamentos() {
+	public List<Punch> getPunches() {
 		return punches;
 	}
 
