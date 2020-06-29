@@ -17,7 +17,7 @@ public class PasswordUtils {
 	 * @param senha
 	 * @return String
 	 */
-	public static String gerarBCrypt(String senha) {
+	public static String generateBCrypt(String senha) {
 		if (senha == null) {
 			return senha;
 		}
