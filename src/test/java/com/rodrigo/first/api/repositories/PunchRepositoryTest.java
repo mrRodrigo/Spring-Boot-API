@@ -50,6 +50,11 @@ public class PunchRepositoryTest {
 		this.punchRepository.save(getPunch(funcionario));
 	}
 	
+	@AfterAll
+	public void tearDown() throws Exception {
+		this.companyRepository.deleteAll();
+	}
+	
 	@Test
 	public void testFindPunchByID() {
 		List<Punch> lancs = this.punchRepository.findByWorkerId(workerId);
