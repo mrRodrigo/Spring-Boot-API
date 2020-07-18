@@ -42,17 +42,5 @@ public class SwaggerConfig {
 				.build();
 	}
 
-	@Bean
-	public SecurityConfiguration security() {
-		String token;
-		try {
-			UserDetails userDetails = this.userDetailsService.loadUserByUsername("admin@kazale.com");
-			token = this.jwtTokenUtil.obterToken(userDetails);
-		} catch (Exception e) {
-			token = "";
-		}
-
-		return new SecurityConfiguration(null, null, null, null, "Bearer " + token, ApiKeyVehicle.HEADER,
-				"Authorization", ",");
-	}
+	
 }
