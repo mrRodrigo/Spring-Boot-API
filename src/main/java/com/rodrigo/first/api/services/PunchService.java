@@ -1,5 +1,7 @@
 package com.rodrigo.first.api.services;
 
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import java.util.Optional;
@@ -21,6 +23,7 @@ public interface PunchService {
 	 * @param id
 	 * @return Optional<Lancamento>
 	 */
+	@Cacheable("punchesById")
 	Optional<Punch> findById(Long id);
 	
 	/**
@@ -29,6 +32,7 @@ public interface PunchService {
 	 * @param lancamento
 	 * @return Lancamento
 	 */
+	@CachePut("punchesById")
 	Punch persist(Punch lancamento);
 	
 	/**
