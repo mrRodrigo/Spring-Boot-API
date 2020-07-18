@@ -50,7 +50,7 @@ public class RegisterPFController {
 	 * @throws NoSuchAlgorithmException
 	 */
 	@PostMapping
-	public ResponseEntity<Response<RegisterPFDto>> cadastrar(@Valid @RequestBody RegisterPFDto registerPFDto,
+	public ResponseEntity<Response<RegisterPFDto>> register(@Valid @RequestBody RegisterPFDto registerPFDto,
 			BindingResult result) throws NoSuchAlgorithmException {
 		log.info("Cadastrando PF: {}", registerPFDto.toString());
 		Response<RegisterPFDto> response = new Response<RegisterPFDto>();
