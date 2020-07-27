@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.com/mrRodrigo/Spring-Boot-API.svg?branch=master)](https://travis-ci.com/mrRodrigo/Spring-Boot-API)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FmrRodrigo%2FSpring-Boot-initial.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FmrRodrigo%2FSpring-Boot-initial?ref=badge_shield)
 
-### This application is running on Herokuapp
+### O deploy desta aplicação foi realizado utilizando Herokuapp pipeline
 - A documentação do Swagger pode ser utilizada [aqui](https://api-ponto.herokuapp.com/swagger-ui.html).
 - Todos testes unitários e Continuous integration estão no Travis -> [Aqui](https://travis-ci.com/github/mrRodrigo/Spring-Boot-API)
 
