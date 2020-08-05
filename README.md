@@ -1,5 +1,17 @@
 # Spring-Boot-API
 
+<div>
+  <img src="https://matheuspcarvalhoblog.files.wordpress.com/2018/05/spring-framework.png" alt="drawing" width="150"/>
+  <img src="https://cdn.worldvectorlogo.com/logos/mysql.svg" alt="drawing" width="150"/>
+  <img src="https://dwglogo.com/wp-content/uploads/2017/12/TravisCI_Mascot_pride_logo.png" alt="drawing" width="150"/> 
+  <img src="https://www.ehcache.org/images/Ehcache_Logo.png" alt="drawing" width="150"/> 
+  <img src="https://flywaydb.org/assets/logo/flyway-logo-tm.png" alt="drawing" width="150"/>
+  
+</div>
+
+</br>
+</br>
+
 [![Build Status](https://travis-ci.com/mrRodrigo/Spring-Boot-API.svg?branch=master)](https://travis-ci.com/mrRodrigo/Spring-Boot-API)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FmrRodrigo%2FSpring-Boot-initial.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FmrRodrigo%2FSpring-Boot-initial?ref=badge_shield)
 
